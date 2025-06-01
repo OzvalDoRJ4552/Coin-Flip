@@ -13,7 +13,7 @@ if 'df_experiment_results' not in st.session_state:
 
 st.header('Tossing a Coin')
 
-chart = st.line_chart(pd.DataFrame(columns=["mean"]))
+chart = st.line_chart(pd.DataFrame({"mean": pd.Series(dtype="float")}))
 
 def toss_coin(n):
 
